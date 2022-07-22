@@ -1,27 +1,9 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import styled from 'styled-components'
-import Clock from '../../assets/wall-clock-icon.svg'
-import Address from '../../assets/address-icon.svg'
-import Phone from '../../assets/phone-icon.svg'
+import Clock from '../../../assets/wall-clock-icon.svg'
+import Address from '../../../assets/address-icon.svg'
+import Phone from '../../../assets/phone-icon.svg'
 
 const StoreInfo = () => {
-
-useEffect(() => {
-    AOS.init({
-        offset: 200,
-        delay: 100,
-        duration: 400,
-        easing: 'ease',
-        once: false,
-        mirror: false,
-        anchorPlacement: 'top-bottom'
-    });
-    AOS.refresh();
-}, []);
-
-
   return (
     <Store>
         <section id="storeInfo">

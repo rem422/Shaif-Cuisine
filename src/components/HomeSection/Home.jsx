@@ -2,9 +2,11 @@ import styled from 'styled-components'
 import HeroImg from '../../assets/heroImg.png'
 // Components
 import Navbar from '../Navbar/Navbar'
-import StoreInfo from '../StoreInfo/StoreInfo'
-import Specials from './SpecialsSection'
+import StoreInfoSection from '../Global/StoreInfo/StoreInfo'
+import SpecialsSection from './SpecialsSection'
 import Footer from '../Footer/Footer'
+import DishesSection from '../Global/TopDishSection/TopDishSection'
+import DiscountSection from '../Global/DiscountSection/DiscountSection'
 
 const Home = () => {
   return (
@@ -30,8 +32,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <StoreInfo />
-          <Specials />
+          <StoreInfoSection />
+          <SpecialsSection />
+          <DishesSection />
+          <DiscountSection />
       </section>
       <Footer />
     </HomeSection>
@@ -55,7 +59,7 @@ const HomeSection = styled.div`
       .hero__heading {
         font-family: var(--font-poppins);
         font-weight: 600;
-        line-height: 1.4rem;
+        line-height: 1.8em;
         text-align: center;
         font-size: 1.4rem;
         margin-bottom: 1.5rem;

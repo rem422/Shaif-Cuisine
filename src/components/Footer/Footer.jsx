@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import Logo from '../Logo/Logo'
+import Logo from '../Global/Logo/Logo'
 import { FiFacebook, FiInstagram, FiTwitter } from 'react-icons/fi'
 
 const Footer = () => {

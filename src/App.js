@@ -4,8 +4,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 // Stylings
 import GlobalStyles from './components/Styles/GlobalStyles';
-import ResetStyles from './components/Styles/Reset';
-import ComponentStyles from './components/Styles/Component';
+// import ResetStyles from './components/Styles/Reset';
+// import ComponentStyles from './components/Styles/Component';
 
 //Components
 import Home from './components/HomeSection/Home';
@@ -32,9 +32,9 @@ useEffect(() => {
 
   return (
     <>
-    <ResetStyles />
+    {/* <ResetStyles /> */}
     <GlobalStyles />
-    <ComponentStyles />
+    {/* <ComponentStyles /> */}
 
     <Routes>
     <Route exact path="/" element={<Home />}/>

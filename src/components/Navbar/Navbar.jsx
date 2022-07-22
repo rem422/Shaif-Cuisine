@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { FiX } from 'react-icons/fi'
 import { RiMenu3Line } from 'react-icons/ri'
-import Logo from '../Logo/Logo'
+import Logo from '../Global/Logo/Logo'
 
 const Navbar = () => {
 

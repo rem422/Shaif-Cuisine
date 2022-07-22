@@ -90,12 +90,12 @@ const Specials = styled.div`
 .ourSpecials__item__img {
     margin-top: calc(-50% - 2rem);
     margin-bottom: 2rem;
-    border-radius: 12px;
+    border-radius: 12px !important;
     height: 150px;
-    overflow: hidden;
+    overflow: hidden !important;
 
     img {
-        object-fit: contain;
+        object-fit: cover;
     }
 }
 
@@ -161,6 +161,7 @@ const Specials = styled.div`
 
     .ourSpecials__item {
         padding: 2rem;
+        width: 45%;
     }
 
     .ourSpecials__item__title {
