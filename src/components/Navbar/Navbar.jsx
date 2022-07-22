@@ -29,7 +29,6 @@ const Navbar = () => {
             <Logo />
         </Link>
         <div className="nav__menu">
-
 			<div className={isMobile && isNavOpen ? "nav__bgOverlay active" : undefined} onClick={() => setIsNavOpen(false)}></div>
 
 			<nav className={isMobile && isNavOpen ? 'open' : undefined}>
@@ -76,6 +75,8 @@ const Navigation = styled.nav`
     left: 0;
     width: 100%;
     height: var(--header-height);
+    background: var(--lightGreen-2);
+    z-index: 1000;
 
 	.nav {
 		display: flex;

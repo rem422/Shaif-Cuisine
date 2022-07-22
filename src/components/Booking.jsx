@@ -3,8 +3,9 @@ import Footer from "./Footer/Footer"
 
 const Booking = () => {
   return (
-    <div>
+     <div>
       <Navbar />
+      <div className="container"></div>
       <Footer />
     </div>
   )

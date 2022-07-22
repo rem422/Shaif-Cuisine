@@ -18,6 +18,9 @@ const GlobalStyles = createGlobalStyle`
 	--black-3: #5b6359;
 	--white-1: #e8e8e8;
 
+	--font-poppins: 'Poppins', sans-serif;
+	--font-raleway: 'Raleway' sans-serif;
+
 	--transition: all .3s ease;
 }
 
@@ -26,12 +29,12 @@ html {
 	overflow-x: hidden;
 }
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
 	background: var(--lightGreen-2);
 	overflow-x: hidden;
 }
 
-ul, li {
+ul, ol, li {
 	list-style: none;
 }
 
@@ -51,6 +54,7 @@ section {
 .primary-btn {
 	color: var(--white-1);
 	background: var(--green-1);
+	padding: 1.2rem 2rem;
 }
 
 @media only screen and (min-width: 768px) {
