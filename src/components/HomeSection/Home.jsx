@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import HeroImg from '../../assets/heroImg.png'
 // Components
-import Navbar from '../Navbar/Navbar'
+import Navbar from '../NavbarSection/Navbar'
 import StoreInfoSection from '../Global/StoreInfo/StoreInfo'
 import SpecialsSection from './SpecialsSection'
-import Footer from '../Footer/Footer'
+import Footer from '../FooterSection/Footer'
 import DishesSection from '../Global/TopDishSection/TopDishSection'
 import DiscountSection from '../Global/DiscountSection/DiscountSection'
 
@@ -20,8 +21,8 @@ const Home = () => {
                   <h1 className="hero__heading">The flavor of tradition</h1>
                   <p className="hero__info">We are a multi-cuisin restaurant offering a wide variety of food experience in both casual and fine dining environment.</p>
                   <div className="button__wrapper">
-                    <button className="btn primary-btn">Explore Menu</button>
-                    <button className="btn">Book Table</button>
+                    <Link to="/" className="btn primary-btn">Explore Menu</Link>
+                    <Link to="booking" className="btn">Book Table</Link>
                   </div>
                 </div>
               </div>
@@ -75,6 +76,7 @@ const HomeSection = styled.div`
 
       .button__wrapper {
         text-align: center;
+        gap: 1rem;
 
         /* button::nth-child(1) {
           margin-right: 1rem;

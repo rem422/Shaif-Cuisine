@@ -9,10 +9,10 @@ import GlobalStyles from './components/Styles/GlobalStyles';
 
 //Components
 import Home from './components/HomeSection/Home';
-import Menu from './components/Menu';
-import About from './components/About';
-import Contact from './components/Contact';
-import Booking from './components/Booking';
+import Menu from './components/MenuSection/Menu';
+import About from './components/AboutSection/About';
+import Contact from './components/ContactSection/Contact';
+import Booking from './components/BookingSection/Booking';
 
 function App() {
 

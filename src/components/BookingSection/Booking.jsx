@@ -1,5 +1,5 @@
-import Navbar from "./Navbar/Navbar"
-import Footer from "./Footer/Footer"
+import Navbar from "../NavbarSection/Navbar"
+import Footer from "../FooterSection/Footer"
 
 const Booking = () => {
   return (
