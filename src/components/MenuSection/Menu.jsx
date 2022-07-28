@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../NavbarSection/Navbar'
 import Footer from '../FooterSection/Footer'
+import FooterCopyright from "../FooterSection/FooterCopyright"
 
 const Menu = () => {
   return (
@@ -8,6 +9,7 @@ const Menu = () => {
       <Navbar />
       <div className="container"></div>
       <Footer />
+      <FooterCopyright />
     </div>
   )
 }

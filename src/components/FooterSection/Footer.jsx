@@ -4,12 +4,6 @@ import Logo from '../Global/Logo/Logo'
 import { FiFacebook, FiInstagram, FiTwitter } from 'react-icons/fi'
 
 const Footer = () => {
-
-const getYear = () => {
-    return new Date().getFullYear();
-}
-
-
   return (
     <FooterSection>
         <div className="container">
@@ -85,11 +79,6 @@ const getYear = () => {
                 </div>
             </div>
         </div>
-    <div className="copyright">
-        <div className="container">
-            <p className='copyright__text'> &copy; copyright {getYear()} Shaif's Cuisine | All rights reserved</p>
-        </div>
-    </div>
     </FooterSection>
   )
 }
@@ -155,14 +144,6 @@ const FooterSection = styled.div`
     line-height: 1.4em;
 }
 
-.copyright {
-    padding: 1rem 0;
-    .copyright__text {
-        font-size: 1.4rem;
-        text-align: center;
-    }
-}
-
 @media only screen and (min-width:768px) {
     padding: 8rem 0 4rem 0;
 
@@ -200,15 +181,6 @@ const FooterSection = styled.div`
         font-size: 1.8rem;
         margin-bottom: 1rem;
     }
-
-
-.copyright {
-    padding: 1rem 0;
-    .copyright__text {
-        font-size: 1.6rem;
-        text-align: left;
-    }
-}
 }
 `;
 

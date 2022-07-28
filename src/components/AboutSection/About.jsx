@@ -1,5 +1,6 @@
 import Navbar from "../NavbarSection/Navbar"
 import Footer from "../FooterSection/Footer"
+import FooterCopyright from "../FooterSection/FooterCopyright"
 
 const About = () => {
   return (
@@ -7,6 +8,7 @@ const About = () => {
       <Navbar />
       <div className="container"></div>
       <Footer />
+      <FooterCopyright />
     </div>
   )
 }

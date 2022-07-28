@@ -8,6 +8,10 @@ import SpecialsSection from './SpecialsSection'
 import Footer from '../FooterSection/Footer'
 import DishesSection from '../Global/TopDishSection/TopDishSection'
 import DiscountSection from '../Global/DiscountSection/DiscountSection'
+import EventsMediaSection from './EventsMediaSection'
+import EventsInfoSection from './EventsInfoSection'
+import FooterCopyright from '../FooterSection/FooterCopyright'
+import WhyUsSection from './WhyUsSection'
 
 const Home = () => {
   return (
@@ -37,8 +41,12 @@ const Home = () => {
           <SpecialsSection />
           <DishesSection />
           <DiscountSection />
+          <EventsMediaSection />
+          <EventsInfoSection />
+          <WhyUsSection />
       </section>
       <Footer />
+      <FooterCopyright />
     </HomeSection>
   )
 }
