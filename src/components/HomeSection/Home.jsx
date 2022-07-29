@@ -1,19 +1,33 @@
 import { Link } from 'react-router-dom'
+import React, { useEffect } from "react";
 import styled from 'styled-components'
+import AOS from "aos";
 import HeroImg from '../../assets/heroImg.png'
 // Components
 import Navbar from '../NavbarSection/Navbar'
+import {Specials, EventsMedia, EventsInfo, WhyUs, Testimonial, Newsletter } from './index'
 import StoreInfoSection from '../Global/StoreInfo/StoreInfo'
-import SpecialsSection from './SpecialsSection'
-import Footer from '../FooterSection/Footer'
 import DishesSection from '../Global/TopDishSection/TopDishSection'
 import DiscountSection from '../Global/DiscountSection/DiscountSection'
-import EventsMediaSection from './EventsMediaSection'
-import EventsInfoSection from './EventsInfoSection'
+import Footer from '../FooterSection/Footer'
 import FooterCopyright from '../FooterSection/FooterCopyright'
-import WhyUsSection from './WhyUsSection'
 
 const Home = () => {
+
+useEffect(() => {
+    AOS.init({
+      offset: 200,
+      delay: 100,
+      duration: 400,
+      easing: 'ease',
+      once: false,
+      mirror: false,
+      anchorPlacement: 'top-bottom'
+      });
+    AOS.refresh();
+  }, []);
+
+
   return (
     <HomeSection>
       <Navbar />
@@ -38,12 +52,14 @@ const Home = () => {
             </div>
           </div>
           <StoreInfoSection />
-          <SpecialsSection />
+          <Specials />
           <DishesSection />
           <DiscountSection />
-          <EventsMediaSection />
-          <EventsInfoSection />
-          <WhyUsSection />
+          <EventsMedia />
+          <EventsInfo />
+          <WhyUs />
+          <Testimonial />
+          <Newsletter />
       </section>
       <Footer />
       <FooterCopyright />

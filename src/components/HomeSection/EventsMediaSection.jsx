@@ -1,10 +1,26 @@
 import { Link } from 'react-router-dom'
+import React, { useEffect } from "react";
 import styled from 'styled-components'
+import AOS from "aos";
 import EventMedia1 from '../../assets/eventsMedia1.png'
 import PlayIcon from '../../assets/playIcon.svg'
 import EventMedia2 from '../../assets/eventsMedia2.png'
 
 const EventsInfoSection = () => {
+
+useEffect(() => {
+    AOS.init({
+      offset: 200,
+      delay: 100,
+      duration: 400,
+      easing: 'ease',
+      once: false,
+      mirror: false,
+      anchorPlacement: 'top-bottom'
+      });
+    AOS.refresh();
+  }, []);
+  
   return (
     <EventsMedia>
       <section className="eventsMedia" data-aos="fade-up">

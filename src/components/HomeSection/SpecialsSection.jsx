@@ -1,10 +1,27 @@
 import { Link } from 'react-router-dom'
+import React, { useEffect } from "react";
 import styled from 'styled-components'
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Food1 from '../../assets/food-1.png'
 import Food3 from '../../assets/food-3.png'
 import Stars from '../../assets/3star.png'
 
 const SpecialsSection = () => {
+
+useEffect(() => {
+    AOS.init({
+      offset: 200,
+      delay: 100,
+      duration: 400,
+      easing: 'ease',
+      once: false,
+      mirror: false,
+      anchorPlacement: 'top-bottom'
+      });
+    AOS.refresh();
+  }, []);
+
 return (
     <Specials>
     <section id="ourSpecials" data-aos="fade-up">

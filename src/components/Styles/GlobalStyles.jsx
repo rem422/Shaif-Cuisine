@@ -27,6 +27,7 @@ const GlobalStyles = createGlobalStyle`
 html {
 	font-size: 10px;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 body {
     font-family: var(--font-poppins);
