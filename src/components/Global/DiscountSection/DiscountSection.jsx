@@ -35,7 +35,7 @@ const DiscountSection = () => {
                     <div className="discount__stars">
                       <img src={Stars} alt="rattings" />
                     </div>
-                    <Link to="booking" className='btn primary-btn'>
+                    <Link to="booking" className='primary-btn'>
                       Book Table
                     </Link>
                   </div>
@@ -109,6 +109,17 @@ const Discount = styled.div`
   height: 15px;
   margin-bottom: 1rem;
 }
+
+.discount__wrapper a {
+  border: 2px solid var(--green-1);
+}
+
+.discount__wrapper a:hover {
+  border: 2px solid var(--green-1);
+}
+
+
+
 
 @media only screen and (min-width: 768px) {
   .discount__wrapper {

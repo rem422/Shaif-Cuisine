@@ -5,12 +5,12 @@ import GlobalStyles from './components/Styles/GlobalStyles';
 // import ComponentStyles from './components/Styles/Component';
 
 //Components
-import Home from './components/HomeSection/Home';
-import Menu from './components/MenuSection/Menu';
-import About from './components/AboutSection/About';
-import Contact from './components/ContactSection/Contact';
-import Booking from './components/BookingSection/Booking';
-import ScrollBtn from './components/ScrollButton/ScrollBtn';
+import Home from './components/HomePage/Home';
+import Menu from './components/MenuPage/Menu';
+import About from './components/AboutPage/About';
+import Contact from './components/ContactPage/Contact';
+import Booking from './components/BookingPage/Booking';
+import ScrollBtn from './components/Global/ScrollButton/ScrollBtn';
 
 function App() {
   return (

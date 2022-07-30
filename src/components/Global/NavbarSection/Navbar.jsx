@@ -3,9 +3,25 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { FiX } from 'react-icons/fi'
 import { RiMenu3Line } from 'react-icons/ri'
-import Logo from '../Global/Logo/Logo'
+import Logo from '../Logo/Logo'
 
 const Navbar = () => {
+    const [navbar, setNavbar] = useState(false)
+
+    // navbar scrollchangeBackground function
+  const changeBackground = () => {
+    if (window.scrollY > 55) {
+        setNavbar(true);
+    } else {
+        setNavbar(false);
+    }
+};
+
+useEffect(() => {
+    changeBackground();
+    // adds the event when scroll change background
+    window.addEventListener("scroll", changeBackground);
+}, []);
 
 	// Shows the Menu button when the screen size is equal to or less than 760px
     const [isMobile, setIsMobile] = useState(
@@ -23,6 +39,7 @@ const Navbar = () => {
 
   return (
     <Navigation>
+    <div className={navbar ? "sticky" : undefined}>
     <div className="container">
         <div className="nav">
         <Link to="/">
@@ -65,6 +82,7 @@ const Navbar = () => {
         </div>
         </div>
     </div>
+    </div>
     </Navigation>
   )
 }
@@ -77,6 +95,11 @@ const Navigation = styled.nav`
     height: var(--header-height);
     background: var(--lightGreen-2);
     z-index: 1000;
+
+.sticky {
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, .2);
+    transition: var(--transition);
+}
 
 	.nav {
 		display: flex;
@@ -120,7 +143,7 @@ const Navigation = styled.nav`
 
     .close_icon {
         position: absolute;
-        right: 22px;
+        right: 28px;
         top: 15px;
 		color: var(--black-1);
         transition: all .3s ease;

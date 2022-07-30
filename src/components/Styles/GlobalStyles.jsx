@@ -48,20 +48,38 @@ section {
 	font-family: 'Poppins';
 	font-weight: 500;
 	border-radius: 8px;
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	padding: 1.2rem 2rem;
 	border: none;
+	background: var(--lightGreen-1);
+	transition: var(--transition);
 }
+
+.btn:hover {
+	background: var(--green-1);
+	color: var(--white-1);
+}
+
+
 .primary-btn {
 	color: var(--white-1);
 	background: var(--green-1);
 	padding: 1.2rem 2rem;
+	border-radius: 8px;
+	font-size: 1.6rem;
+	transition: var(--transition);
 }
 
-@media only screen and (min-width: 768px) {
+.primary-btn:hover {
+	background: var(--lightGreen-1);
+	color: var(--green-1);
+}
+
+@media only screen and (max-width: 768px) {
+	.primary-btn,
 	.btn {
-		padding: 1.3rem 2rem;
-		font-size: 2rem;
+		padding: 1rem 1.7rem;
+		font-size: 1.4rem;
 	}
 }
 
@@ -93,6 +111,98 @@ p {
 a {
 	display: inline-block;
 	text-decoration: none;
+}
+
+/* Form Styles */
+#form {
+	padding: 5rem 0;
+}
+.form__title {
+	font-size: 1.8rem;
+	color: var(--black-1);
+	font-weight: 600;
+}
+.form__wrapper {
+	padding: 3rem 0;
+}
+.form__wrapper form {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+}
+
+.form__group {
+		/* margin: 0 auto; */
+		width: 100%;
+		/* max-width: 100%; */
+		/* padding-right: 3rem; */
+	}
+
+
+.form__group label {
+	font-size: 1.6rem;
+	font-family: Poppins;
+	color: var(--black-2);
+	font-weight: 500;
+}
+.form__group input,
+.form__group textarea,
+.form__group select {
+	width: 100%;
+	border: none;
+	background-color: var(--lightGreen-1);
+	font-size: 1.4rem;
+	font-family: Raleway;
+	font-weight: 600;
+	padding: 1.5rem;
+	border-radius: 8px;
+	margin-top: 0.5rem;
+	color: var(--black-2);
+}
+
+.form__group textarea {
+	resize: vertical;
+}
+
+.form__wrapper button[type='submit'] {
+	width: max-content;
+	border: none;
+	padding: 1rem 4rem;
+	font-weight: 500;
+	letter-spacing: 0.1rem;
+}
+@media only screen and (min-width: 768px) {
+	.form__title {
+		font-size: 3.6rem;
+	}
+	.form__wrapper {
+		padding: 5rem 0;
+	}
+	.form__wrapper form {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.form__group {
+		/* gap: 4rem; */
+		/* margin: 0 2rem; */
+		/* max-width: 100%; */
+	}
+
+	.form__group__full {
+		grid-column: 1/3;
+	}
+	.form__group label {
+		font-size: 1.8rem;
+	}
+	.form__group input,
+	.form__group textarea,
+	.form__group select {
+		font-size: 1.8rem;
+		font-family: var(--font-poppins);
+		padding: 2rem;
+		margin-top: 1.5rem;
+		outline: none;
+	}
 }
 
 `;

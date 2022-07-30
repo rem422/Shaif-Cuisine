@@ -4,13 +4,13 @@ import styled from 'styled-components'
 import AOS from "aos";
 import HeroImg from '../../assets/heroImg.png'
 // Components
-import Navbar from '../NavbarSection/Navbar'
+import Navbar from "../Global/NavbarSection/Navbar"
+import Footer from "../Global/FooterSection/Footer"
+import FooterCopyright from "../Global/FooterSection/FooterCopyright"
 import {Specials, EventsMedia, EventsInfo, WhyUs, Testimonial, Newsletter } from './index'
 import StoreInfoSection from '../Global/StoreInfo/StoreInfo'
 import DishesSection from '../Global/TopDishSection/TopDishSection'
 import DiscountSection from '../Global/DiscountSection/DiscountSection'
-import Footer from '../FooterSection/Footer'
-import FooterCopyright from '../FooterSection/FooterCopyright'
 
 const Home = () => {
 
@@ -39,7 +39,7 @@ useEffect(() => {
                   <h1 className="hero__heading">The flavor of tradition</h1>
                   <p className="hero__info">We are a multi-cuisin restaurant offering a wide variety of food experience in both casual and fine dining environment.</p>
                   <div className="button__wrapper">
-                    <Link to="/" className="btn primary-btn">Explore Menu</Link>
+                    <Link to="/" className="primary-btn">Explore Menu</Link>
                     <Link to="booking" className="btn">Book Table</Link>
                   </div>
                 </div>
@@ -77,9 +77,11 @@ const HomeSection = styled.div`
     justify-content: center;
     flex-direction: column-reverse;
     gap: 5rem;
+    }
 
     .hero__left-wrapper {
       max-width: 360px;
+    }
 
       .hero__heading {
         font-family: var(--font-poppins);
@@ -100,20 +102,15 @@ const HomeSection = styled.div`
 
       .button__wrapper {
         text-align: center;
-        gap: 1rem;
-
-        /* button::nth-child(1) {
-          margin-right: 1rem;
-        } */
+        padding: 0 1rem;
       }
-    }
 
     .hero__img-wrapper {
       max-width: 400px;
       width: 80%;
       margin: 0 auto;
     }
-  }
+
 
 @media only screen and (min-width:768px) {
   .hero__wrapper {
@@ -138,6 +135,7 @@ const HomeSection = styled.div`
 
       .button__wrapper {
         text-align: left;
+        padding: 0;
       }
     }
 

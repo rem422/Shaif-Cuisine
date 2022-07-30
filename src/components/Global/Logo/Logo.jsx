@@ -16,6 +16,10 @@ const LogoStyles = styled.div`
         height: 100%;
         object-fit: contain;
     }
+
+    @media only screen and (max-width: 768px) {
+      max-width: 70px;
+    }
 `;
 
 export default Logo

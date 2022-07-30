@@ -17,6 +17,8 @@ const getYear = () => {
 
 const Copyright = styled.div`
 padding: 1rem;
+    height: 0;
+
 .copyright__text {
     font-size: 1.4rem;
     text-align: center;

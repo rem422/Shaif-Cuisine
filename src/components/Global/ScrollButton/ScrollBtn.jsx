@@ -48,7 +48,7 @@ const ScrollUpBtn = styled.div`
     opacity: 0;
     pointer-events: none;
     transition: all .3s ease;
-    z-index: 1000;
+    z-index: 999;
 }
 
 .scroll-up-btn:active{

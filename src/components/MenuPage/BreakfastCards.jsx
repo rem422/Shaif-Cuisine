@@ -1,15 +1,15 @@
 import styled from 'styled-components'
-import Food1 from '../../../assets/food-1.png'
-import Food2 from '../../../assets/food-2.png'
-import Food3 from '../../../assets/food-7.png'
-import Stars from '../../../assets/3star.png'
+import Food1 from '../../assets/food-1.png'
+import Food2 from '../../assets/food-2.png'
+import Food3 from '../../assets/food-7.png'
+import Stars from '../../assets/3star.png'
 
-const TopDishSection = () => {
+const BreakfastCards = () => {
   return (
     <DishSection>
         <section id="dishGrid" data-aos="fade-up">
             <div className="container">
-                <h2 className="dishGrid__title">Top Dishes</h2>
+                <h2 className="dishGrid__title">BreakFast</h2>
                 <div className="dishGrid__wrapper">
                     <div className="dishGrid__item">
                         <div className="dishGrid__item__img">
@@ -17,7 +17,7 @@ const TopDishSection = () => {
                         </div>
                         <div className='dishGrid__item__info'>
                             <h3 className='dishGrid__item__title'>
-                                Vegan Salad bowl
+                                Hot Green Bowl
                             </h3>
                             <h3 className='dishGrid__item__price'>
                                 $13
@@ -59,6 +59,38 @@ const TopDishSection = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="dishGrid__item">
+                        <div className="dishGrid__item__img">
+                            <img src={Food3} alt="food" />
+                        </div>
+                        <div className='dishGrid__item__info'>
+                            <h3 className='dishGrid__item__title'>
+                                Hot Green Bowl
+                            </h3>
+                            <h3 className='dishGrid__item__price'>
+                                $12
+                            </h3>
+                            <div className='dishGrid__item__stars'>
+                                <img src={Stars} alt="rattings" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="dishGrid__item">
+                        <div className="dishGrid__item__img">
+                            <img src={Food3} alt="food" />
+                        </div>
+                        <div className='dishGrid__item__info'>
+                            <h3 className='dishGrid__item__title'>
+                                Hot Green Bowl
+                            </h3>
+                            <h3 className='dishGrid__item__price'>
+                                $12
+                            </h3>
+                            <div className='dishGrid__item__stars'>
+                                <img src={Stars} alt="rattings" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -67,11 +99,6 @@ const TopDishSection = () => {
 }
 
 const DishSection = styled.div`
-#dishGrid {
-    padding: 50px 0;
-}
-
-
 .dishGrid__title {
     font-size: 1.8rem;
     margin-bottom: 2rem;
@@ -128,6 +155,10 @@ const DishSection = styled.div`
 }
 
 @media only screen and (min-width: 768px) {
+#dishGrid {
+    padding: 10px 0;
+}
+
     .dishGrid__title {
         font-size: 2.4rem;
     }
@@ -156,4 +187,4 @@ const DishSection = styled.div`
 
 `;
 
-export default TopDishSection
+export default BreakfastCards
