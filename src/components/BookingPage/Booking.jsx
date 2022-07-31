@@ -43,21 +43,41 @@ useEffect(() => {
                     <label htmlFor="email">Email</label>
                     <input type="email" id="email" name="email" required/>
                   </div>
+                  <div class="form__group">
+                  <label for="tableType">Table Type</label>
+                  <select name="Table Type" id="tableType" required>
+                    <option selected disabled>Choose</option>
+                    <option value="small">Small(2 persons)</option>
+                    <option value="medium">Small(4 persons)</option>
+                    <option value="large">large(6 persons)</option>
+                  </select>
+                </div>
+                <div className="form__group">
+                    <label htmlFor="guestNumber">Guest Number</label>
+                    <input type="number" id="guestNumber" name="guestNumber" min="1" max="10" required/>
+                </div>
+                  <div class="form__group">
+                  <label for="placement">Placement</label>
+                  <select name="Placement" id="placement">
+                    <option selected disabled>Choose</option>
+                    <option value="outdoor">Outdoor</option>
+                    <option value="indoor">Indoor</option>
+                    <option value="rooftop">rooftop</option>
+                  </select>
+                  </div>
                   <div className="form__group">
-                    <label htmlFor="tableType">Table Type</label>
-                    <select name="table_type" id="tableType">
-                      <option selected disabled>Choose</option>
-                      <option value="small">Small (2 person)</option>
-                      <option value="medium">Medium (4 person)</option>
-                      <option value="large">Large (6 person)</option>
-                    </select>
+                    <label htmlFor="date">Date</label>
+                    <input type="date" id="date" name="date" required/>
+                  </div>
+                  <div className="form__group">
+                    <label htmlFor="time">Time</label>
+                    <input type="time" id="time" name="time" required/>
                   </div>
                   <div className="form__group form__group__full">
                     <label htmlFor="note">Note</label>
                     <textarea name="note" id="note" cols="30" rows="10" required></textarea>
                   </div>
                   <button type="submit" className="primary-btn">Send</button>
-                  
                 </form>
               </div>
       </div>

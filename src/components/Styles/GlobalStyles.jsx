@@ -24,6 +24,14 @@ const GlobalStyles = createGlobalStyle`
 	--transition: all .3s ease;
 }
 
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
 html {
 	font-size: 10px;
 	overflow-x: hidden;
@@ -130,15 +138,6 @@ a {
 	grid-template-columns: 1fr;
 	gap: 2rem;
 }
-
-.form__group {
-		/* margin: 0 auto; */
-		width: 100%;
-		/* max-width: 100%; */
-		/* padding-right: 3rem; */
-	}
-
-
 .form__group label {
 	font-size: 1.6rem;
 	font-family: Poppins;
@@ -152,18 +151,16 @@ a {
 	border: none;
 	background-color: var(--lightGreen-1);
 	font-size: 1.4rem;
-	font-family: Raleway;
+	font-family: var(--font-raleway);
 	font-weight: 600;
 	padding: 1.5rem;
 	border-radius: 8px;
 	margin-top: 0.5rem;
 	color: var(--black-2);
 }
-
 .form__group textarea {
-	resize: vertical;
+	resize: none;
 }
-
 .form__wrapper button[type='submit'] {
 	width: max-content;
 	border: none;
@@ -179,15 +176,8 @@ a {
 		padding: 5rem 0;
 	}
 	.form__wrapper form {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(2 , 1fr);
 	}
-
-	.form__group {
-		/* gap: 4rem; */
-		/* margin: 0 2rem; */
-		/* max-width: 100%; */
-	}
-
 	.form__group__full {
 		grid-column: 1/3;
 	}
@@ -198,13 +188,11 @@ a {
 	.form__group textarea,
 	.form__group select {
 		font-size: 1.8rem;
-		font-family: var(--font-poppins);
 		padding: 2rem;
 		margin-top: 1.5rem;
-		outline: none;
+		width: 100%;
 	}
 }
-
 `;
 
 export default GlobalStyles;

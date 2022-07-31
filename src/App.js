@@ -1,9 +1,6 @@
 import {Routes, Route} from 'react-router-dom'
 // Stylings
 import GlobalStyles from './components/Styles/GlobalStyles';
-// import ResetStyles from './components/Styles/Reset';
-// import ComponentStyles from './components/Styles/Component';
-
 //Components
 import Home from './components/HomePage/Home';
 import Menu from './components/MenuPage/Menu';
@@ -16,8 +13,6 @@ function App() {
   return (
     <>
     <GlobalStyles />
-    {/* <ResetStyles /> */}
-    {/* <ComponentStyles /> */}
     <Routes>
     <Route exact path="/" element={<Home />}/>
     <Route exact path="/menu" element={<Menu />}/>
