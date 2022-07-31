@@ -103,6 +103,10 @@ const HomeSection = styled.div`
       .button__wrapper {
         text-align: center;
         padding: 0 1rem;
+        
+        a:nth-child(2) {
+          margin-left: 1rem;
+        }
       }
 
     .hero__img-wrapper {

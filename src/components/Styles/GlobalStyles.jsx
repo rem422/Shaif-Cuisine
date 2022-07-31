@@ -157,6 +157,7 @@ a {
 	border-radius: 8px;
 	margin-top: 0.5rem;
 	color: var(--black-2);
+	outline-color: var(--green-1);
 }
 .form__group textarea {
 	resize: none;
